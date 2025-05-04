@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#content{
+    display: grid;
+    grid-auto-flow: row;
+    white-space: nowrap;  
+}
+.head{
+    background-color: rgb(110, 57, 121);
+    padding: 5px;  
+}
+#menu{
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr;
+}
+.logo{
+    font-size: 50px;
+    margin-left:0px;
+}
+.logo img{
+    width: 70px;
+}
+.destaques{
+    font-size: 20px;
+    align-items: baseline;
+}
+.geral{
+    font-size: 20px;
+    align-items: baseline;
+}
+.corpo{
+    background-color: rgb(98, 51, 143);
+    height: 100vh;
+}
+.texto{
+    font-size: x-large;
+    white-space: normal;
+}
+.conteudo{
+    position: relative;
+    display: inline-block;
+}
+
+.trigger{
+    padding: 10px 20px;
+    color: black;
+    cursor: pointer;
+}
+.trigger:hover{
+    transform: rotate(90deg);
+}
+.lista{
+    display: none; /* Começa oculto */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 150px;
+}
+.lista ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.lista ul li{
+    padding: 8px;
+    cursor: pointer;
+}
+.lista ul li:hover{
+    background-color: #f0f0f0;
+}
+
+.conteudo:hover .lista{
+    display: block;
+}
+.lista ul li a{
+    text-decoration: none;
+    color: black;
+}
+.login{
+    text-align: center;
+    margin-left: 90%;
+    margin-top: -4%;
+    margin-right: 50px;
+    height: 25px;
+    width: 60px;
+}
+.login input{
+    border: 2px solid black;
+}
+#login-content{
+        display: grid;
+        grid-auto-flow: row;
+}
+.cima{
+    height: 20dvh;
+    background-color: rgb(98, 51, 143);
+}
+.baixo{
+    height: 20dvh;
+    background-color: rgb(98, 51, 143);
+}
+#conteudo-meio{
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr;
+    height: 60dvh;
+}
+.esquerda-meio, .meio-meio, .direita-meio {
+    height: 100%; /* Faz o fundo ocupar toda a altura da div */
+}
+.esquerda-meio{
+    background-color: rgb(98, 51, 143);
+}
+.meio-meio{
+background-color: white;
+border: solid 5px grey;
+}
+.direita-meio{
+background-color: rgb(98, 51, 143);
+}
+.titulo{
+    font-size: 50px;
+    white-space: nowrap;
+}
+form input{
+    margin-top: 5px;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    padding: 10px;
+    width: 70%;
+}
+.botão{
+    margin-left: 13%;
+    margin-top: 30px;
+}
+.conta{
+    text-align: center;
+    margin-left: 85%;
+    margin-top: -5%;
+    margin-right: 100px;
+    height: 25px;
+    width: 60px;
+}
